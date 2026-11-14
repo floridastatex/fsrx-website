@@ -137,3 +137,40 @@
 @media(max-width:900px){.oak-hero{padding:85px 7vw;min-height:610px}.oak-hero-emblem{right:5%;width:32vw;opacity:.65}.oak-welcome{gap:35px}.oak-feature{gap:40px}.department-directory{padding-inline:22px}.department-join{margin-inline:22px}}
 @media(max-width:700px){.home-page .site-header,.departments-page .site-header{padding:12px 5vw}.oak-hero{min-height:620px;padding:75px 7vw 80px}.oak-hero-emblem{width:230px;right:-65px;top:25%;opacity:.2}.oak-hero-shade{background:linear-gradient(90deg,#0d1727f5,#0d1727b8)}.oak-hero h1{font-size:clamp(48px,12vw,70px)}.oak-hero-foot{margin-top:48px;gap:15px;flex-wrap:wrap}.hero-scroll{left:7vw;transform:none}.oak-welcome{grid-template-columns:1fr;padding:70px 7vw 40px;gap:20px}.oak-pillars{grid-template-columns:1fr;padding:25px 7vw 65px}.oak-pillar{min-height:0}.oak-pillar>p:not(.eyebrow){min-height:0}.oak-feature{grid-template-columns:1fr;padding:0 7vw;margin-bottom:65px;gap:30px}.oak-feature-art{min-height:290px}.oak-feature-art img{width:145px;height:145px}.oak-join{margin:0 5vw 55px;padding:28px;align-items:flex-start;flex-direction:column}.oak-join h2{font-size:29px}.oak-footer{padding:28px 5vw;align-items:flex-start;flex-direction:column}.oak-footer>div{flex-wrap:wrap}.department-hero{padding:70px 7vw 50px}.department-hero h1{font-size:52px}.department-directory{padding:55px 5vw}.directory-heading{display:block}.directory-heading>p{margin-top:12px}.directory-heading h2{font-size:32px}.department-card-grid{grid-template-columns:1fr}.department-tile{padding:19px}.department-tile-main{grid-template-columns:72px minmax(0,1fr);gap:14px;padding:22px 0}.department-emblem{width:72px;height:72px;padding:9px;border-radius:14px}.department-tile h2{font-size:18px}.department-tile-main p{font-size:11px}.department-join{margin:0 5vw 55px;padding:28px;align-items:flex-start;flex-direction:column}.department-join h2{font-size:26px}}
 @media(max-width:420px){.department-tile-top{align-items:flex-start;flex-direction:column}.department-tile-bottom{align-items:flex-start;flex-direction:column}.access-status{font-size:10px}.oak-hero .actions{align-items:stretch;flex-direction:column;max-width:260px}.oak-hero .button{justify-content:center}}
+
+/* Restored original FSRX home hero artwork and motion */
+.home-page .home-hero{
+  min-height:650px;
+  padding:82px max(8vw,calc((100vw - 1200px)/2)) 70px;
+  grid-template-columns:1.05fr .95fr;
+  gap:45px;
+  color:#fff;
+  background:radial-gradient(ellipse at 78% 46%,#294e77 0%,transparent 36%),linear-gradient(115deg,#0d1727 0%,#14243a 58%,#1a304b 100%);
+}
+.home-page .home-hero .eyebrow{color:#9cc7ff}
+.home-page .home-hero h1{color:#fff;font-size:clamp(54px,7vw,88px)}
+.home-page .home-hero h1 span{color:#81b6ff}
+.home-page .home-hero .hero-copy{color:#c2cede;max-width:520px}
+.home-page .home-hero .hero-outline{border:1px solid #ffffff55;color:#fff;background:#ffffff0b;border-radius:999px}
+.home-page .home-hero .primary{border-radius:999px}
+.home-page .home-hero .hero-meta{color:#9aabc0}
+.home-page .home-hero .hero-meta i{background:#75d5a0;box-shadow:0 0 0 5px #75d5a022}
+.home-page .home-hero .hero-art{height:430px}
+.home-page .home-hero .art-orbit{border-color:#81b6ff55;animation:fsrx-orbit 24s linear infinite}
+.home-page .home-hero .orbit-two{border-color:#d0dff055;animation-direction:reverse;animation-duration:34s}
+.home-page .home-hero .art-card{background:linear-gradient(145deg,#1b3049,#263f5d);box-shadow:0 35px 80px #0006;animation:fsrx-float 5s ease-in-out infinite}
+.home-page .home-hero .hero-emblem-card img{filter:drop-shadow(0 10px 20px #0007)}
+.home-page .home-hero .art-dot{animation:fsrx-pulse 2.6s ease-in-out infinite}
+@keyframes fsrx-orbit{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes fsrx-float{0%,100%{transform:translateY(0) rotate(5deg)}50%{transform:translateY(-13px) rotate(2deg)}}
+@keyframes fsrx-pulse{0%,100%{transform:scale(1);box-shadow:0 0 0 12px #81b6ff30}50%{transform:scale(1.14);box-shadow:0 0 0 19px #81b6ff12}}
+@media(max-width:800px){
+  .home-page .home-hero{grid-template-columns:1fr;padding:65px 7vw 45px;gap:10px}
+  .home-page .home-hero .hero-art{height:340px}
+  .home-page .home-hero .hero-meta{margin-top:42px;flex-wrap:wrap;gap:16px}
+  .home-page .home-hero .art-orbit{width:300px;height:300px}
+  .home-page .home-hero .orbit-two{width:350px;height:350px}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-page .home-hero .art-orbit,.home-page .home-hero .art-card,.home-page .home-hero .art-dot{animation:none}
+}
