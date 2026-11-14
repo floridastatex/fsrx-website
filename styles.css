@@ -19,3 +19,121 @@
 .hero-emblem-card strong{font-size:20px;line-height:1.15;letter-spacing:.01em;max-width:220px}
 .hero-emblem-card small{font-size:8px;letter-spacing:.14em}
 @media(max-width:800px){.brand-logo{width:40px;height:40px;flex-basis:40px}.hero-emblem-card{width:245px;height:300px}.hero-emblem-card img{width:145px;height:145px}}
+
+
+/* =========================================================
+   FSRX refreshed home + department directory
+   ========================================================= */
+:root{--fsrx-blue:#81b6ff;--fsrx-night:#101a2b;--fsrx-night-2:#17263b;--fsrx-text:#17263b}
+.home-page,.departments-page{background:#f5f7fa}
+.home-page .site-header,.departments-page .site-header{min-height:78px;padding:13px 5.5vw;background:rgba(255,255,255,.96);backdrop-filter:blur(16px)}
+.home-page .nav a:hover,.departments-page .nav a:hover,.home-page .nav a.active,.departments-page .nav a.active{color:#315f98}
+.home-page .nav-cta,.departments-page .nav-cta{background:#17263b;color:#fff!important;border-radius:999px;padding:12px 19px}
+.home-page .nav-cta:hover,.departments-page .nav-cta:hover{background:#294466;color:#fff!important}
+.oak-hero{position:relative;isolation:isolate;min-height:650px;display:flex;align-items:center;overflow:hidden;padding:95px max(8vw,calc((100vw - 1200px)/2));background:radial-gradient(ellipse at 78% 42%,#294e77 0%,transparent 36%),radial-gradient(ellipse at 15% 100%,#1c3859 0%,transparent 45%),linear-gradient(115deg,#0d1727 0%,#14243a 55%,#1a304b 100%);color:#fff}
+.oak-hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background-image:linear-gradient(120deg,transparent 0 49.8%,#81b6ff20 50%,transparent 50.2%),linear-gradient(30deg,transparent 0 49.8%,#81b6ff18 50%,transparent 50.2%);background-size:100px 100px;mask-image:linear-gradient(90deg,transparent,#000 65%)}
+.oak-hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0d1727 0%,#0d1727eF 40%,#0d172780 100%)}
+.oak-hero-content{position:relative;z-index:2;max-width:680px}
+.oak-hero .eyebrow,.oak-feature .eyebrow,.oak-join .eyebrow,.department-hero .eyebrow{color:#9cc7ff}
+.eyebrow-line{display:inline-block;width:27px;height:2px;background:var(--fsrx-blue);vertical-align:middle;margin:0 10px 3px 0}
+.oak-hero h1{font-size:clamp(54px,7.3vw,94px);line-height:.98;letter-spacing:-.065em;color:#fff;margin:24px 0}
+.oak-hero h1 span{color:var(--fsrx-blue)}
+.oak-hero-copy{max-width:540px;color:#c2cede;font-size:16px;line-height:1.85}
+.oak-hero .actions{margin-top:32px;gap:13px}
+.oak-hero .button{border-radius:999px;padding:15px 22px}
+.oak-hero .primary,.oak-feature .primary,.department-join .primary{background:var(--fsrx-blue);color:#102039}
+.oak-hero .primary:hover,.oak-feature .primary:hover,.department-join .primary:hover{background:#a6ceff;transform:translateY(-2px)}
+.hero-outline{border:1px solid #ffffff55;color:#fff;background:#ffffff0b}
+.hero-outline:hover{background:#ffffff18;border-color:#ffffff99}
+.oak-hero-foot{display:flex;gap:28px;margin-top:70px;color:#9aabc0;font-size:9px;font-weight:850;letter-spacing:.17em}
+.oak-hero-foot i{display:inline-block;width:7px;height:7px;margin-right:8px;border-radius:50%;background:#75d5a0;box-shadow:0 0 0 5px #75d5a022}
+.oak-hero-emblem{position:absolute;right:10%;top:50%;width:min(34vw,390px);aspect-ratio:1;transform:translateY(-50%);display:grid;place-items:center;border:1px solid #81b6ff30;border-radius:50%;box-shadow:0 0 0 35px #81b6ff08,0 0 0 75px #81b6ff06}
+.oak-hero-emblem:before,.oak-hero-emblem:after{content:"";position:absolute;inset:10%;border:1px solid #81b6ff26;border-radius:50%}
+.oak-hero-emblem:after{inset:-18%;border-style:dashed;opacity:.45}
+.oak-hero-emblem img{width:63%;height:63%;object-fit:contain;filter:drop-shadow(0 22px 35px #0008)}
+.hero-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:11px;color:#9aabc0;font-size:8px;font-weight:850;letter-spacing:.2em}
+.hero-scroll span{height:25px;width:15px;border:1px solid #9aabc077;border-radius:12px;position:relative}
+.hero-scroll span:after{content:"";position:absolute;top:5px;left:6px;width:2px;height:5px;background:var(--fsrx-blue);border-radius:2px}
+.oak-welcome{max-width:1200px;margin:auto;padding:105px 30px 65px;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:end}
+.oak-section-heading .eyebrow,.oak-pillar .eyebrow,.oak-welcome .eyebrow,.directory-heading .eyebrow{color:#5889c2}
+.oak-section-heading h2{font-size:clamp(35px,4.5vw,54px);line-height:1.08;letter-spacing:-.055em;margin:17px 0 0;color:#17263b}
+.oak-section-heading h2 span{color:#6398d4}
+.oak-welcome-copy p{font-size:15px;line-height:1.9;color:#657184;margin:0 0 23px;max-width:490px}
+.arrow-link{font-size:12px;font-weight:850;color:#3c75b8}
+.oak-pillars{max-width:1200px;margin:auto;padding:35px 30px 95px;display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.oak-pillar{position:relative;min-height:300px;padding:30px;background:#fff;border:1px solid #e2e8f0;border-radius:17px;box-shadow:0 10px 35px #17263b08;transition:transform .28s,border-color .28s,box-shadow .28s}
+.oak-pillar:hover{transform:translateY(-6px);border-color:#b6d4fa;box-shadow:0 20px 45px #294b7020}
+.oak-pillar-featured{background:linear-gradient(145deg,#172b44,#203c5c);color:#fff;border-color:#203c5c}
+.oak-pillar-featured .eyebrow{color:#9cc7ff}
+.pillar-icon{width:43px;height:43px;border-radius:12px;display:grid;place-items:center;background:#eaf3ff;color:#477ebd;font-size:12px;font-weight:900;margin-bottom:27px}
+.oak-pillar-featured .pillar-icon{background:#ffffff16;color:#a8ceff}
+.oak-pillar h3{font-size:25px;letter-spacing:-.04em;margin:10px 0}
+.oak-pillar>p:not(.eyebrow){font-size:13px;line-height:1.8;color:#718095;min-height:70px}
+.oak-pillar-featured>p:not(.eyebrow){color:#c1cedd}
+.oak-pillar>a{display:inline-block;margin-top:15px;color:#548bcf;font-size:12px;font-weight:850}
+.oak-pillar-featured>a{color:#a8ceff}
+.oak-feature{max-width:1200px;margin:0 auto 90px;padding:0 30px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.oak-feature-art{min-height:370px;border-radius:22px;background:radial-gradient(circle at 50% 45%,#31577f,#172b44 68%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;position:relative;overflow:hidden}
+.oak-feature-art:before,.oak-feature-art:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #81b6ff36;border-radius:50%}
+.oak-feature-art:after{width:390px;height:390px}
+.oak-feature-art img{width:175px;height:175px;object-fit:contain;z-index:1;filter:drop-shadow(0 14px 25px #0006)}
+.oak-feature-art span{z-index:1;color:#b7cbe3;font-size:9px;letter-spacing:.23em;font-weight:850}
+.oak-feature-copy h2{font-size:clamp(42px,5vw,62px);line-height:1;letter-spacing:-.06em;margin:17px 0;color:#17263b}
+.oak-feature-copy>p:not(.eyebrow){max-width:460px;color:#68768a;line-height:1.9;font-size:14px;margin-bottom:27px}
+.oak-feature .button,.oak-join .button{border-radius:999px}
+.oak-join{margin:0 auto 80px;max-width:1140px;padding:42px 48px;border-radius:20px;background:linear-gradient(115deg,#e7f1ff,#d6e8ff);display:flex;align-items:center;justify-content:space-between;gap:30px}
+.oak-join h2{font-size:34px;letter-spacing:-.05em;margin:12px 0;color:#17263b}
+.oak-join p:not(.eyebrow){max-width:560px;color:#62738a;font-size:13px;line-height:1.8}
+.oak-join .dark{background:#172b44;color:#fff;padding:15px 22px}
+.oak-footer{padding:32px 5.5vw;background:#101a2b;color:#aab8ca;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:10px}
+.oak-footer .brand{color:#fff}
+.oak-footer>div{display:flex;gap:20px}
+.oak-footer>div a{margin:0;color:#c1ccda}
+.oak-footer>div a:hover{color:var(--fsrx-blue)}
+.oak-footer p{line-height:1.7}
+
+/* Departments */
+.department-main{background:#f5f7fa;min-height:70vh}
+.department-hero{position:relative;overflow:hidden;padding:90px max(7vw,calc((100vw - 1180px)/2)) 65px;background:radial-gradient(ellipse at 82% 30%,#2b4b70 0%,transparent 40%),linear-gradient(115deg,#101a2b,#1b3049);color:#fff}
+.department-hero:after{content:"FSRX";position:absolute;right:5%;bottom:-48px;font-size:clamp(130px,22vw,290px);font-weight:950;letter-spacing:-.1em;color:#ffffff08;pointer-events:none}
+.department-hero h1{position:relative;z-index:1;font-size:clamp(48px,6vw,76px);line-height:1;letter-spacing:-.065em;margin:18px 0}
+.department-hero h1 span{color:var(--fsrx-blue)}
+.department-hero>p:not(.eyebrow){position:relative;z-index:1;max-width:650px;color:#c2cede;font-size:15px;line-height:1.85}
+.department-hero-meta{display:flex;gap:27px;margin-top:43px;color:#a7b7ca;font-size:9px;font-weight:850;letter-spacing:.18em}
+.department-directory{max-width:1200px;margin:auto;padding:70px 30px 75px}
+.directory-heading{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:27px}
+.directory-heading h2{font-size:38px;letter-spacing:-.05em;margin:10px 0 0;color:#17263b}
+.directory-heading>p{max-width:420px;color:#748195;font-size:12px;line-height:1.8;margin:0 0 4px}
+.department-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.department-tile{--glow:#81b6ff;position:relative;isolation:isolate;overflow:hidden;background:#fff;border:1px solid #e3e9f0;border-radius:19px;padding:23px;min-width:0;box-shadow:0 8px 28px #14243a08;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.department-tile:before{content:"";position:absolute;z-index:-1;inset:0;opacity:0;pointer-events:none;background:radial-gradient(190px circle at 0% 0%,#81b6ff55,transparent 70%),radial-gradient(190px circle at 100% 100%,#81b6ff40,transparent 70%);transition:opacity .35s ease}
+.department-tile:after{content:"";position:absolute;z-index:-1;inset:0;border-radius:inherit;padding:1px;opacity:0;background:linear-gradient(135deg,#81b6ff99,transparent 35%,transparent 65%,#81b6ff99);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;transition:opacity .35s ease;pointer-events:none}
+.department-tile:hover{transform:translateY(-5px);border-color:#b6d4fa;box-shadow:0 18px 45px #27476c18}
+.department-tile:hover:before,.department-tile:hover:after{opacity:1}
+.department-tile-top{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:26px}
+.department-category{font-size:9px;letter-spacing:.16em;font-weight:900;color:#7890ac}
+.access-status{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;color:#4e6f98;font-size:10px;font-weight:850}
+.access-status img{width:19px;height:19px;object-fit:contain}
+.access-partial{color:#9a7435}
+.access-open{color:#28835b}
+.department-tile-main{display:grid;grid-template-columns:90px minmax(0,1fr);gap:19px;align-items:center;padding:26px 0 23px}
+.department-emblem{width:90px;height:90px;border-radius:17px;background:linear-gradient(145deg,#f1f5fa,#e8eef5);border:1px solid #e1e8f0;display:grid;place-items:center;padding:12px;overflow:hidden}
+.department-emblem img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.department-tile h2{font-size:20px;line-height:1.2;letter-spacing:-.035em;margin:0 0 9px;color:#1b2b40}
+.department-tile-main p{font-size:12px;line-height:1.75;color:#748195;margin:0}
+.department-tile-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #edf0f4;padding-top:17px;color:#9aa6b5;font-size:8px;font-weight:900;letter-spacing:.13em}
+.department-tile-bottom a{font-size:10px;letter-spacing:0;color:#477fbf;font-weight:850}
+.department-tile-bottom a:hover{color:#1e4f85}
+.tile-no-link{font-size:9px;color:#318563}
+.department-note{display:flex;align-items:center;gap:13px;margin-top:24px;padding:17px 19px;border:1px solid #dce8f6;border-radius:13px;background:#edf4fc}
+.note-mark{flex:0 0 23px;width:23px;height:23px;border-radius:50%;display:grid;place-items:center;background:#d7e9ff;color:#447bb8;font-weight:900;font-size:12px}
+.department-note p{margin:0;color:#687a91;font-size:11px;line-height:1.7}
+.department-join{max-width:1140px;margin:0 auto 80px;padding:37px 42px;border-radius:18px;background:#172b44;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.department-join .eyebrow{color:#9cc7ff}
+.department-join h2{font-size:30px;letter-spacing:-.045em;margin:10px 0}
+.department-join p:not(.eyebrow){font-size:12px;color:#c0ccdb;margin:0;line-height:1.7}
+.department-join .button{border-radius:999px;white-space:nowrap}
+
+@media(max-width:900px){.oak-hero{padding:85px 7vw;min-height:610px}.oak-hero-emblem{right:5%;width:32vw;opacity:.65}.oak-welcome{gap:35px}.oak-feature{gap:40px}.department-directory{padding-inline:22px}.department-join{margin-inline:22px}}
+@media(max-width:700px){.home-page .site-header,.departments-page .site-header{padding:12px 5vw}.oak-hero{min-height:620px;padding:75px 7vw 80px}.oak-hero-emblem{width:230px;right:-65px;top:25%;opacity:.2}.oak-hero-shade{background:linear-gradient(90deg,#0d1727f5,#0d1727b8)}.oak-hero h1{font-size:clamp(48px,12vw,70px)}.oak-hero-foot{margin-top:48px;gap:15px;flex-wrap:wrap}.hero-scroll{left:7vw;transform:none}.oak-welcome{grid-template-columns:1fr;padding:70px 7vw 40px;gap:20px}.oak-pillars{grid-template-columns:1fr;padding:25px 7vw 65px}.oak-pillar{min-height:0}.oak-pillar>p:not(.eyebrow){min-height:0}.oak-feature{grid-template-columns:1fr;padding:0 7vw;margin-bottom:65px;gap:30px}.oak-feature-art{min-height:290px}.oak-feature-art img{width:145px;height:145px}.oak-join{margin:0 5vw 55px;padding:28px;align-items:flex-start;flex-direction:column}.oak-join h2{font-size:29px}.oak-footer{padding:28px 5vw;align-items:flex-start;flex-direction:column}.oak-footer>div{flex-wrap:wrap}.department-hero{padding:70px 7vw 50px}.department-hero h1{font-size:52px}.department-directory{padding:55px 5vw}.directory-heading{display:block}.directory-heading>p{margin-top:12px}.directory-heading h2{font-size:32px}.department-card-grid{grid-template-columns:1fr}.department-tile{padding:19px}.department-tile-main{grid-template-columns:72px minmax(0,1fr);gap:14px;padding:22px 0}.department-emblem{width:72px;height:72px;padding:9px;border-radius:14px}.department-tile h2{font-size:18px}.department-tile-main p{font-size:11px}.department-join{margin:0 5vw 55px;padding:28px;align-items:flex-start;flex-direction:column}.department-join h2{font-size:26px}}
+@media(max-width:420px){.department-tile-top{align-items:flex-start;flex-direction:column}.department-tile-bottom{align-items:flex-start;flex-direction:column}.access-status{font-size:10px}.oak-hero .actions{align-items:stretch;flex-direction:column;max-width:260px}.oak-hero .button{justify-content:center}}
