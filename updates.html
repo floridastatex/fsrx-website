@@ -1,1 +1,975 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Updates | Florida State Roleplay</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png"></head><body><header class="site-header"><a class="brand" href="index.html"><img class="brand-logo" src="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png" alt="Florida State Roleplay logo"><span>FLORIDA STATE ROLEPLAY<small>COMMUNITY • ROLEPLAY • EXPERIENCE</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a href="departments.html">Departments</a><a href="applications.html">Applications</a><a href="team.html">Staff Team</a><a href="handbook.html">Handbook</a><a class="active" href="updates.html">Updates</a><a href="marketplace.html">Marketplace</a><a class="nav-cta" href="https://discord.gg/REPLACE-ME">Join FSRX</a></nav></header><main class="page-main"><p class="eyebrow">WHAT'S HAPPENING</p><h1>Latest updates</h1><p class="page-lead">Announcements, community news, and important changes will be shared here.</p><article class="news-card"><span class="tag">ANNOUNCEMENT • ADD DATE</span><h2>Welcome to the FSRX website</h2><p>This is a starter news post. Replace it with your latest community announcement, event information, or development update.</p></article><article class="news-card"><span class="tag">COMMUNITY • ADD DATE</span><h2>Stay connected</h2><p>Join the FSRX Discord to receive announcements and participate in community activities.</p></article></main><footer><p>© 2026 Florida State Roleplay.</p><div><a href="handbook.html">Handbook</a><a href="index.html">Home</a></div></footer><script src="script.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The latest Florida State Roleplay X announcements, news, and website updates.">
+
+    <title>Updates | Florida State Roleplay X</title>
+
+    <link rel="icon" href="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --updates-blue: #81b6ff;
+            --updates-bg: #080f1b;
+            --updates-panel: #0d1929;
+            --updates-border: rgba(180,205,235,.12);
+            --updates-muted: #9eafc2;
+        }
+
+        body {
+            background: var(--updates-bg);
+            color: #f4f7fb;
+        }
+
+        /* HERO */
+
+        .updates-hero {
+            position: relative;
+            min-height: 360px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg, rgba(4,13,25,.9), rgba(4,13,25,.3)),
+                linear-gradient(0deg, rgba(4,13,25,.45), transparent),
+                url("https://www.image2url.com/r2/default/images/1794620589958-4a428acf-b939-4af8-8bf2-1cfe65a859d3.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .updates-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 65%, var(--updates-bg));
+            pointer-events: none;
+        }
+
+        .updates-hero-content {
+            width: min(1180px, 100%);
+            margin: auto;
+            padding: 90px 30px 110px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--updates-blue);
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .hero-eyebrow::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background: var(--updates-blue);
+        }
+
+        .updates-hero h1 {
+            color: #fff;
+            font-family: var(--display, 'Manrope', sans-serif);
+            font-size: clamp(48px, 8vw, 86px);
+            line-height: .98;
+            font-weight: 900;
+            letter-spacing: -4px;
+            margin: 0;
+            text-transform: uppercase;
+            text-shadow: 0 4px 25px rgba(0,0,0,.3);
+        }
+
+        .updates-hero h1 span {
+            color: var(--updates-blue);
+        }
+
+        .updates-hero p {
+            color: rgba(255,255,255,.8);
+            font-size: 15px;
+            line-height: 1.85;
+            max-width: 510px;
+            margin: 22px 0 0;
+        }
+
+        /* PAGE */
+
+        .updates-page {
+            width: min(1180px, 100%);
+            margin: 0 auto;
+            padding: 35px 30px 100px;
+        }
+
+        .updates-intro {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 25px;
+            padding-bottom: 27px;
+            border-bottom: 1px solid var(--updates-border);
+            margin-bottom: 35px;
+        }
+
+        .updates-eyebrow {
+            color: var(--updates-blue);
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .updates-intro h2 {
+            color: #fff;
+            font-family: var(--display, 'Manrope', sans-serif);
+            font-size: clamp(27px, 4vw, 38px);
+            font-weight: 900;
+            letter-spacing: -1.3px;
+            margin: 0 0 9px;
+        }
+
+        .updates-intro p {
+            color: var(--updates-muted);
+            font-size: 13px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .updates-total {
+            flex-shrink: 0;
+            padding: 11px 15px;
+            border: 1px solid var(--updates-border);
+            border-radius: 7px;
+            background: rgba(255,255,255,.025);
+            color: #c6d5e7;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        /* TOOLBAR */
+
+        .updates-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+
+        .updates-filters {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-button {
+            border: 1px solid transparent;
+            background: transparent;
+            color: #91a4bb;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: .25s ease;
+        }
+
+        .filter-button:hover {
+            color: #fff;
+            background: rgba(255,255,255,.04);
+        }
+
+        .filter-button.active {
+            color: var(--updates-blue);
+            background: rgba(129,182,255,.09);
+            border-color: rgba(129,182,255,.22);
+        }
+
+        .updates-search-wrap {
+            position: relative;
+            width: min(100%, 270px);
+        }
+
+        .updates-search-wrap span {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8194aa;
+            font-size: 16px;
+            pointer-events: none;
+        }
+
+        .updates-search {
+            width: 100%;
+            padding: 12px 15px 12px 40px;
+            border: 1px solid var(--updates-border);
+            border-radius: 7px;
+            background: #0d1b2c;
+            color: #fff;
+            font: inherit;
+            font-size: 12px;
+            outline: none;
+            transition: .2s ease;
+        }
+
+        .updates-search::placeholder {
+            color: #778ba2;
+        }
+
+        .updates-search:focus {
+            border-color: var(--updates-blue);
+            box-shadow: 0 0 18px rgba(129,182,255,.09);
+        }
+
+        /* FEATURED UPDATE */
+
+        .featured-label {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--updates-blue);
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 13px;
+            text-transform: uppercase;
+        }
+
+        .featured-label::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--updates-blue);
+            box-shadow: 0 0 12px rgba(129,182,255,.7);
+        }
+
+        .featured-update {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 34px;
+            min-height: 290px;
+            margin-bottom: 35px;
+            border: 1px solid rgba(129,182,255,.2);
+            border-radius: 10px;
+            background:
+                radial-gradient(ellipse at 90% 0%, rgba(81,144,224,.15), transparent 55%),
+                linear-gradient(120deg, #11243a, #0c1929 75%);
+            transition: .3s ease;
+        }
+
+        .featured-update:hover {
+            border-color: rgba(129,182,255,.42);
+            box-shadow: 0 20px 50px rgba(0,0,0,.2);
+        }
+
+        .featured-update::after {
+            content: "";
+            position: absolute;
+            right: -80px;
+            bottom: -180px;
+            width: 370px;
+            height: 370px;
+            border: 1px solid rgba(129,182,255,.08);
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 35px rgba(129,182,255,.025),
+                0 0 0 70px rgba(129,182,255,.02);
+            pointer-events: none;
+        }
+
+        .featured-update .update-meta {
+            position: relative;
+            z-index: 1;
+        }
+
+        .featured-update h3 {
+            position: relative;
+            z-index: 1;
+            max-width: 760px;
+            color: #fff;
+            font-family: var(--display, 'Manrope', sans-serif);
+            font-size: clamp(25px, 4vw, 38px);
+            line-height: 1.25;
+            letter-spacing: -1px;
+            font-weight: 900;
+            margin: 0 0 15px;
+        }
+
+        .featured-update .update-description {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            color: #a9bbd0;
+            font-size: 14px;
+            line-height: 1.9;
+            -webkit-line-clamp: 3;
+        }
+
+        .featured-update .read-more {
+            position: relative;
+            z-index: 1;
+            margin-top: auto;
+        }
+
+        /* UPDATE GRID */
+
+        .updates-section-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .updates-section-heading h3 {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 900;
+            margin: 0;
+        }
+
+        .updates-section-heading span {
+            color: #7f93aa;
+            font-size: 11px;
+        }
+
+        .updates-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 17px;
+            align-items: stretch;
+        }
+
+        .update-card {
+            min-width: 0;
+            min-height: 245px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            padding: 25px;
+            border: 1px solid var(--updates-border);
+            border-radius: 9px;
+            background: linear-gradient(145deg, #102238, #0b1727);
+            transition: transform .25s ease, border-color .25s ease, background .25s ease;
+        }
+
+        .update-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #4c91e8, #81b6ff);
+            opacity: .65;
+            transition: opacity .25s ease;
+        }
+
+        .update-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(129,182,255,.32);
+            background: linear-gradient(145deg, #132941, #0d1c2e);
+        }
+
+        .update-card:hover::before {
+            opacity: 1;
+        }
+
+        .update-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-bottom: 21px;
+        }
+
+        .update-date {
+            color: #8fa3ba;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .8px;
+        }
+
+        .update-category {
+            padding: 6px 9px;
+            border-radius: 4px;
+            color: var(--updates-blue);
+            background: rgba(129,182,255,.09);
+            border: 1px solid rgba(129,182,255,.16);
+            font-size: 9px;
+            font-weight: 900;
+            letter-spacing: .8px;
+            text-transform: uppercase;
+        }
+
+        .update-card h3 {
+            color: #fff;
+            font-family: var(--display, 'Manrope', sans-serif);
+            font-size: 19px;
+            line-height: 1.45;
+            font-weight: 800;
+            margin: 0 0 11px;
+        }
+
+        .update-description {
+            color: #a1b3c8;
+            font-size: 12px;
+            line-height: 1.85;
+            white-space: pre-wrap;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: auto;
+            padding-top: 22px;
+            color: var(--updates-blue);
+            font-size: 11px;
+            font-weight: 900;
+            text-decoration: none;
+            transition: .2s ease;
+        }
+
+        .read-more:hover {
+            color: #fff;
+            gap: 13px;
+        }
+
+        /* EMPTY / LOADING */
+
+        .updates-empty {
+            grid-column: 1 / -1;
+            padding: 65px 25px;
+            border: 1px solid var(--updates-border);
+            border-radius: 9px;
+            background: rgba(16,34,56,.45);
+            color: var(--updates-muted);
+            text-align: center;
+        }
+
+        .empty-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            margin: 0 auto 17px;
+            border: 1px solid rgba(129,182,255,.2);
+            border-radius: 50%;
+            color: var(--updates-blue);
+            background: rgba(129,182,255,.07);
+            font-size: 20px;
+        }
+
+        .updates-empty h2 {
+            color: #fff;
+            font-size: 19px;
+            margin: 0 0 9px;
+        }
+
+        .updates-empty p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        /* FOOTER */
+
+        .updates-footer-note {
+            margin-top: 45px;
+            padding-top: 22px;
+            border-top: 1px solid var(--updates-border);
+            color: #73869d;
+            font-size: 11px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 800px) {
+            .updates-list {
+                grid-template-columns: 1fr;
+            }
+
+            .updates-hero {
+                min-height: 310px;
+            }
+
+            .updates-intro {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .updates-hero {
+                min-height: 270px;
+                background-position: center;
+            }
+
+            .updates-hero-content {
+                padding: 65px 22px 85px;
+            }
+
+            .updates-hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .updates-page {
+                padding: 25px 18px 70px;
+            }
+
+            .updates-toolbar {
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            .updates-search-wrap {
+                width: 100%;
+            }
+
+            .updates-filters {
+                gap: 5px;
+            }
+
+            .filter-button {
+                padding: 9px 10px;
+                font-size: 10px;
+            }
+
+            .featured-update {
+                padding: 25px;
+                min-height: 275px;
+            }
+
+            .update-card {
+                padding: 22px;
+            }
+
+            .updates-total {
+                width: fit-content;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <img
+                    src="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png"
+                    alt="FSRX Logo"
+                >
+                <span>FSRX</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="departments.html">Departments</a>
+                <a href="updates.html" class="active">Updates</a>
+                <a href="https://discord.gg/XbKbxY2Ugb" target="_blank" rel="noopener noreferrer">Discord</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="updates-hero">
+        <div class="updates-hero-content">
+            <div class="hero-eyebrow">FLORIDA STATE ROLEPLAY X</div>
+
+            <h1>UPDATES<span>.</span></h1>
+
+            <p>
+                The latest announcements, community news, and developments
+                from across Florida State Roleplay X. Stay informed and
+                stay connected.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="updates-page">
+
+        <section class="updates-intro">
+            <div>
+                <div class="updates-eyebrow">THE LATEST FROM FSRX</div>
+                <h2>News & Announcements</h2>
+                <p>
+                    Everything happening across our community, all in one place.
+                </p>
+            </div>
+
+            <div class="updates-total">
+                <span id="totalUpdates">0</span> PUBLISHED UPDATES
+            </div>
+        </section>
+
+        <!-- FILTERS AND SEARCH -->
+
+        <section class="updates-toolbar">
+
+            <div class="updates-filters">
+                <button class="filter-button active" data-filter="all">
+                    All <span id="allCount">0</span>
+                </button>
+
+                <button class="filter-button" data-filter="FSRX">
+                    FSRX <span id="fsrxCount">0</span>
+                </button>
+
+                <button class="filter-button" data-filter="Website">
+                    Website <span id="websiteCount">0</span>
+                </button>
+            </div>
+
+            <div class="updates-search-wrap">
+                <span>⌕</span>
+                <input
+                    type="search"
+                    class="updates-search"
+                    id="updateSearch"
+                    placeholder="Search announcements..."
+                    aria-label="Search updates"
+                >
+            </div>
+
+        </section>
+
+        <!-- FEATURED UPDATE -->
+
+        <section id="featuredSection" hidden>
+            <div class="featured-label">LATEST ANNOUNCEMENT</div>
+            <div id="featuredUpdate"></div>
+        </section>
+
+        <!-- ALL UPDATES -->
+
+        <section>
+            <div class="updates-section-heading">
+                <h3 id="listHeading">Recent Updates</h3>
+                <span id="resultsCount">Loading announcements...</span>
+            </div>
+
+            <div class="updates-list" id="updatesList">
+                <div class="updates-empty">
+                    <div class="empty-icon">↻</div>
+                    <h2>Loading Updates</h2>
+                    <p>Please wait while we retrieve the latest announcements.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="updates-footer-note">
+            Florida State Roleplay X · Official News & Announcements
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+    <script>
+        const API_URL =
+            "https://fsrx-updates-api.wtv-quincy6.workers.dev/api/updates";
+
+        let updates = [];
+        let activeFilter = "all";
+
+        const updatesList = document.getElementById("updatesList");
+        const searchInput = document.getElementById("updateSearch");
+        const featuredSection = document.getElementById("featuredSection");
+        const featuredUpdate = document.getElementById("featuredUpdate");
+
+        function escapeHTML(value) {
+            return String(value ?? "").replace(/[&<>"']/g, char => ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#039;"
+            })[char]);
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return "DATE UNAVAILABLE";
+
+            const date = new Date(dateString);
+
+            if (Number.isNaN(date.getTime())) {
+                return escapeHTML(dateString);
+            }
+
+            return date.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            }).toUpperCase();
+        }
+
+        function getTimestamp(update) {
+            const timestamp = new Date(update.date || 0).getTime();
+            return Number.isNaN(timestamp) ? 0 : timestamp;
+        }
+
+        function getAnnouncementURL(update) {
+            return "announcement.html?id=" +
+                encodeURIComponent(String(update.id ?? ""));
+        }
+
+        function updateCounts() {
+            document.getElementById("allCount").textContent = updates.length;
+
+            document.getElementById("fsrxCount").textContent =
+                updates.filter(update => update.category === "FSRX").length;
+
+            document.getElementById("websiteCount").textContent =
+                updates.filter(update => update.category === "Website").length;
+
+            document.getElementById("totalUpdates").textContent = updates.length;
+        }
+
+        function createUpdateCard(update, featured = false) {
+            const title = escapeHTML(update.title || "Untitled Announcement");
+            const description = escapeHTML(
+                update.description || update.content || "No description provided."
+            );
+            const category = escapeHTML(update.category || "General");
+            const date = formatDate(update.date);
+            const link = getAnnouncementURL(update);
+
+            if (featured) {
+                return `
+                    <article class="featured-update">
+                        <div class="update-meta">
+                            <span class="update-date">${date}</span>
+                            <span class="update-category">${category}</span>
+                        </div>
+
+                        <h3>${title}</h3>
+
+                        <div class="update-description">
+                            ${description}
+                        </div>
+
+                        <a class="read-more" href="${link}">
+                            Read Full Announcement <span>→</span>
+                        </a>
+                    </article>
+                `;
+            }
+
+            return `
+                <article class="update-card">
+                    <div class="update-meta">
+                        <span class="update-date">${date}</span>
+                        <span class="update-category">${category}</span>
+                    </div>
+
+                    <h3>${title}</h3>
+
+                    <div class="update-description">
+                        ${description}
+                    </div>
+
+                    <a class="read-more" href="${link}">
+                        Read Announcement <span>→</span>
+                    </a>
+                </article>
+            `;
+        }
+
+        function renderUpdates() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+
+            const filtered = updates
+                .filter(update => {
+                    return activeFilter === "all" ||
+                        update.category === activeFilter;
+                })
+                .filter(update => {
+                    const searchableText = [
+                        update.title,
+                        update.description,
+                        update.content,
+                        update.category
+                    ].join(" ").toLowerCase();
+
+                    return searchableText.includes(searchTerm);
+                })
+                .sort((a, b) => getTimestamp(b) - getTimestamp(a));
+
+            updateCounts();
+
+            document.getElementById("resultsCount").textContent =
+                `${filtered.length} ${filtered.length === 1 ? "result" : "results"}`;
+
+            document.getElementById("listHeading").textContent =
+                activeFilter === "all"
+                    ? "Recent Updates"
+                    : `${activeFilter} Updates`;
+
+            // Show the featured update only when viewing all updates
+            // without a search query.
+
+            const showFeatured =
+                activeFilter === "all" &&
+                searchTerm === "" &&
+                filtered.length > 0;
+
+            if (showFeatured) {
+                featuredSection.hidden = false;
+                featuredUpdate.innerHTML = createUpdateCard(filtered[0], true);
+            } else {
+                featuredSection.hidden = true;
+                featuredUpdate.innerHTML = "";
+            }
+
+            const remainingUpdates = showFeatured
+                ? filtered.slice(1)
+                : filtered;
+
+            if (!remainingUpdates.length) {
+                if (showFeatured) {
+                    updatesList.innerHTML = "";
+                } else {
+                    updatesList.innerHTML = `
+                        <div class="updates-empty">
+                            <div class="empty-icon">⌕</div>
+                            <h2>No Updates Found</h2>
+                            <p>
+                                There are no announcements matching your search.
+                                Try another search or category.
+                            </p>
+                        </div>
+                    `;
+                }
+
+                return;
+            }
+
+            updatesList.innerHTML = remainingUpdates
+                .map(update => createUpdateCard(update))
+                .join("");
+        }
+
+        async function loadUpdates() {
+            try {
+                const response = await fetch(API_URL, {
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(
+                        `Updates service returned HTTP ${response.status}`
+                    );
+                }
+
+                const data = await response.json();
+
+                const results = Array.isArray(data)
+                    ? data
+                    : data.updates || [];
+
+                updates = results.map(update => ({
+                    id: update.id,
+                    title: update.title,
+                    category: update.category || "General",
+                    date: update.date || update.created_at,
+                    description: update.description || update.summary,
+                    content: update.content
+                }));
+
+                updates.sort((a, b) => getTimestamp(b) - getTimestamp(a));
+
+                renderUpdates();
+
+            } catch (error) {
+                featuredSection.hidden = true;
+
+                updatesList.innerHTML = `
+                    <div class="updates-empty">
+                        <div class="empty-icon">!</div>
+                        <h2>Updates Are Unavailable</h2>
+                        <p>
+                            We're having trouble connecting to the announcements
+                            service. Please try again later.
+                        </p>
+                    </div>
+                `;
+
+                document.getElementById("resultsCount").textContent =
+                    "Unable to load announcements";
+
+                console.error("Could not load updates:", error);
+            }
+        }
+
+        // CATEGORY FILTERS
+
+        document.querySelectorAll(".filter-button").forEach(button => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll(".filter-button")
+                    .forEach(item => item.classList.remove("active"));
+
+                button.classList.add("active");
+                activeFilter = button.dataset.filter;
+
+                renderUpdates();
+            });
+        });
+
+        // SEARCH
+
+        searchInput.addEventListener("input", renderUpdates);
+
+        // INITIAL LOAD
+
+        loadUpdates();
+    </script>
+
+</body>
+</html>
