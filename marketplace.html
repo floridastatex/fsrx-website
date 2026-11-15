@@ -1,1 +1,1103 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marketplace | Florida State Roleplay</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png"></head><body><header class="site-header"><a class="brand" href="index.html"><img class="brand-logo" src="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png" alt="Florida State Roleplay logo"><span>FLORIDA STATE ROLEPLAY<small>COMMUNITY • ROLEPLAY • EXPERIENCE</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a href="departments.html">Departments</a><a href="applications.html">Applications</a><a href="team.html">Staff Team</a><a href="handbook.html">Handbook</a><a href="updates.html">Updates</a><a class="active" href="marketplace.html">Marketplace</a><a class="nav-cta" href="https://discord.gg/REPLACE-ME">Join FSRX</a></nav></header><main class="page-main"><p class="eyebrow">COMMUNITY EXTRAS</p><h1>Marketplace</h1><p class="page-lead">Explore available community perks, supporter options, and sponsored opportunities. Add current pricing and purchase instructions before publishing.</p><div class="page-grid"><article class="info-card"><span class="tag">PERKS</span><h2>Community benefits</h2><p>Showcase available roles, supporter perks, and other community benefits here.</p></article><article class="info-card"><span class="tag">SPONSORSHIP</span><h2>Sponsored opportunities</h2><p>Share details about sponsored advertisements, giveaways, and partnership opportunities.</p></article></div><p class="notice">Please review the official FSRX Discord information before making any purchase. Do not add payment links until they have been verified.</p></main><footer><p>© 2026 Florida State Roleplay.</p><div><a href="handbook.html">Handbook</a><a href="index.html">Home</a></div></footer><script src="script.js"></script></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marketplace | Florida State Roleplay X</title>
+
+<link rel="icon" href="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --blue: #81b6ff;
+    --blue-rgb: 129,182,255;
+    --bg: #07111e;
+    --panel: #102238;
+    --panel-light: #142b43;
+    --text: #f4f7fb;
+    --muted: #9eafc2;
+    --border: rgba(255,255,255,.09);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+/* HERO SLIDESHOW */
+
+.market-hero {
+    position: relative;
+    min-height: 470px;
+    margin: 30px auto 0;
+    width: min(1440px, calc(100% - 48px));
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    background: #0b1b2d;
+    isolation: isolate;
+}
+
+.slides {
+    position: absolute;
+    inset: 0;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease, visibility .8s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(3,12,23,.93) 0%, rgba(3,12,23,.70) 48%, rgba(3,12,23,.20) 100%),
+        linear-gradient(0deg, rgba(3,12,23,.55), transparent 70%);
+}
+
+.slide-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+    padding: 90px 75px;
+}
+
+.slide-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.slide-label::before {
+    content: "";
+    width: 22px;
+    height: 2px;
+    background: var(--blue);
+    border-radius: 10px;
+}
+
+.slide-content h1 {
+    font-family: Manrope, sans-serif;
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+    margin: 0 0 18px;
+}
+
+.slide-content h1 em {
+    color: var(--blue);
+    font-style: normal;
+}
+
+.slide-content p {
+    color: #d0dbea;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 590px;
+    margin: 0 0 25px;
+}
+
+.slide-price {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.slide-price span {
+    color: var(--blue);
+}
+
+.slide-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border-radius: 9px;
+    background: var(--blue);
+    color: #07111e;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    border: 0;
+    cursor: not-allowed;
+    opacity: .85;
+}
+
+.slide-button:disabled {
+    cursor: not-allowed;
+}
+
+.slide-controls {
+    position: absolute;
+    z-index: 5;
+    bottom: 27px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.slide-dot {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: 0;
+    border-radius: 20px;
+    background: rgba(255,255,255,.35);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.slide-dot.active {
+    width: 28px;
+    background: var(--blue);
+}
+
+/* FLOATING BLUE PARTICLES */
+
+.particles {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    bottom: -15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 12px 3px rgba(129,182,255,.5);
+    opacity: 0;
+    animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    15% { opacity: .8; }
+    80% { opacity: .55; }
+    100% {
+        transform: translateY(-510px) translateX(35px);
+        opacity: 0;
+    }
+}
+
+/* MARKETPLACE CONTENT */
+
+.market-wrap {
+    width: min(1440px, calc(100% - 48px));
+    margin: 65px auto 100px;
+}
+
+.market-heading {
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.market-heading h2 {
+    font-family: Manrope, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+    margin: 0 0 9px;
+}
+
+.market-heading p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* SEARCH AND SORT */
+
+.market-tools {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+}
+
+.search-box span {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.search-box input,
+.sort-select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    outline: none;
+    background: var(--panel);
+    color: var(--text);
+    padding: 0 16px;
+    font-size: 13px;
+    transition: .2s;
+}
+
+.search-box input {
+    padding-left: 45px;
+}
+
+.search-box input:focus,
+.sort-select:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(129,182,255,.09);
+}
+
+.sort-select {
+    width: 210px;
+    cursor: pointer;
+}
+
+.sort-select option {
+    background: var(--panel);
+}
+
+/* CATEGORY NAVIGATION */
+
+.category-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 13px;
+    margin-bottom: 38px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(129,182,255,.3) transparent;
+}
+
+.category-btn {
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: #b9c7d8;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.category-btn:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.category-btn.active {
+    background: rgba(129,182,255,.14);
+    border-color: var(--blue);
+    color: var(--blue);
+    box-shadow: 0 0 18px rgba(129,182,255,.09);
+}
+
+/* PRODUCT SECTIONS */
+
+.product-section {
+    margin-bottom: 55px;
+    scroll-margin-top: 100px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-family: Manrope, sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.section-title p {
+    color: var(--muted);
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+
+.section-count {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* PRODUCT CARDS */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background: linear-gradient(145deg, #11263c, #0c1c2e);
+    transition: transform .25s, border-color .25s, box-shadow .25s;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(129,182,255,.55);
+    box-shadow: 0 12px 35px rgba(0,0,0,.2), 0 0 20px rgba(129,182,255,.06);
+}
+
+.product-card.featured {
+    border-color: rgba(129,182,255,.45);
+}
+
+.product-badge {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 5px 9px;
+    border-radius: 5px;
+    background: rgba(129,182,255,.13);
+    color: var(--blue);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.product-icon {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(129,182,255,.11);
+    border: 1px solid rgba(129,182,255,.16);
+    color: var(--blue);
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.product-card h3 {
+    font-family: Manrope, sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    margin: 0 0 9px;
+}
+
+.product-card .bonus {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 800;
+    margin: -3px 0 10px;
+}
+
+.product-description {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.75;
+    margin: 0 0 22px;
+    flex: 1;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.product-price small {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.coming-soon {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid rgba(129,182,255,.2);
+    border-radius: 8px;
+    background: rgba(129,182,255,.08);
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .4px;
+    cursor: not-allowed;
+    opacity: .75;
+}
+
+.empty-state {
+    display: none;
+    text-align: center;
+    color: var(--muted);
+    padding: 50px 20px;
+    border: 1px dashed var(--border);
+    border-radius: 14px;
+    font-size: 13px;
+}
+
+.empty-state h3 {
+    color: var(--text);
+    margin: 0 0 8px;
+}
+
+/* FOOTER */
+
+.market-footer-note {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    background: rgba(16,34,56,.7);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.market-footer-note h3 {
+    font-family: Manrope, sans-serif;
+    font-size: 17px;
+    margin: 0 0 8px;
+}
+
+.market-footer-note p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .market-hero {
+        width: calc(100% - 28px);
+        min-height: 480px;
+        margin-top: 18px;
+        border-radius: 16px;
+    }
+
+    .slide-content {
+        padding: 75px 27px;
+    }
+
+    .slide-content h1 {
+        font-size: 42px;
+    }
+
+    .market-wrap {
+        width: calc(100% - 30px);
+        margin-top: 45px;
+    }
+
+    .market-tools {
+        flex-direction: column;
+    }
+
+    .sort-select {
+        width: 100%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 11px;
+    }
+
+    .product-card {
+        padding: 16px;
+    }
+
+    .product-card h3 {
+        font-size: 15px;
+    }
+
+    .product-description {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 440px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slide-content h1 {
+        font-size: 36px;
+    }
+
+    .market-heading h2 {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <img src="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png" alt="FSRX emblem">
+        <span>FLORIDA STATE<small>ROLEPLAY X</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="departments.html">Departments</a>
+        <a href="applications.html">Applications</a>
+        <a href="team.html">Staff Team</a>
+        <a href="handbook.html">Handbook</a>
+        <a href="updates.html">Updates</a>
+        <a class="active" aria-current="page" href="marketplace.html">Marketplace</a>
+        <a class="nav-cta" href="https://discord.gg/XbKbxY2Ugb" target="_blank" rel="noopener">Join FSRX ↗</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- FEATURED SLIDESHOW -->
+
+<section class="market-hero">
+
+    <div class="slides">
+
+        <article class="slide active" style="background-image:url('https://www.image2url.com/r2/default/images/1794620589958-4a428acf-b939-4af8-8bf2-1cfe65a859d3.png')">
+            <div class="slide-content">
+                <div class="slide-label">Featured Marketplace Item</div>
+                <h1>Sponsor a <em>giveaway!</em></h1>
+                <p>
+                    Want to bring the FSRX community together? Sponsor an official
+                    community giveaway and give members a chance to win something
+                    special. Customize your prize, entry requirements, duration,
+                    and more!
+                </p>
+                <div class="slide-price">700 <span>Sunshine Coins</span></div>
+                <button class="slide-button" disabled>Coming Soon</button>
+            </div>
+        </article>
+
+        <article class="slide" style="background-image:url('https://www.image2url.com/r2/default/images/1794620589958-4a428acf-b939-4af8-8bf2-1cfe65a859d3.png')">
+            <div class="slide-content">
+                <div class="slide-label">Support the Community</div>
+                <h1>Make your <em>mark.</em></h1>
+                <p>
+                    Stand out in the FSRX community with exclusive profile
+                    decorations, special titles, and member perks. Save your
+                    Sunshine Coins for something worth showing off.
+                </p>
+                <div class="slide-price">Starting at <span>250 Sunshine Coins</span></div>
+                <button class="slide-button" disabled>Coming Soon</button>
+            </div>
+        </article>
+
+        <article class="slide" style="background-image:url('https://www.image2url.com/r2/default/images/1794620589958-4a428acf-b939-4af8-8bf2-1cfe65a859d3.png')">
+            <div class="slide-content">
+                <div class="slide-label">Sunshine Coins</div>
+                <h1>Your coins. <em>Your choice.</em></h1>
+                <p>
+                    Earn Sunshine Coins by participating in the community,
+                    attending official events, and contributing to FSRX.
+                    Then spend your balance on marketplace exclusives.
+                </p>
+                <div class="slide-price"><span>Earn. Save. Spend.</span></div>
+                <button class="slide-button" disabled>Coming Soon</button>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="particles" id="particles"></div>
+
+    <div class="slide-controls" aria-label="Slideshow navigation">
+        <button class="slide-dot active" aria-label="Slide 1"></button>
+        <button class="slide-dot" aria-label="Slide 2"></button>
+        <button class="slide-dot" aria-label="Slide 3"></button>
+    </div>
+
+</section>
+
+<!-- MARKETPLACE -->
+
+<section class="market-wrap">
+
+    <div class="market-heading">
+        <div class="eyebrow">FSRX COMMUNITY STORE</div>
+        <h2>Marketplace</h2>
+        <p>Exclusive perks, community extras, and more. Spend your Sunshine Coins on something special.</p>
+    </div>
+
+    <!-- SEARCH AND SORT -->
+
+    <div class="market-tools">
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="search" id="shopSearch" placeholder="Search marketplace items..." aria-label="Search marketplace items">
+        </div>
+
+        <select class="sort-select" id="shopSort" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="az">Name: A to Z</option>
+        </select>
+
+    </div>
+
+    <!-- CATEGORY FILTERS -->
+
+    <div class="category-nav" id="categoryNav">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="coins">Sunshine Coins</button>
+        <button class="category-btn" data-category="giveaway">Sponsored Giveaway</button>
+        <button class="category-btn" data-category="everyone">Everyone Ping</button>
+        <button class="category-btn" data-category="priority">Priority Pass</button>
+        <button class="category-btn" data-category="premium">Premium Tier</button>
+        <button class="category-btn" data-category="advertisement">Advertisement</button>
+        <button class="category-btn" data-category="here">Here Ping</button>
+        <button class="category-btn" data-category="bundle">Bundle</button>
+        <button class="category-btn" data-category="other">Other Pass</button>
+    </div>
+
+    <!-- COIN PACKAGES -->
+
+    <section class="product-section" data-section="coins">
+        <div class="section-title">
+            <div>
+                <h2>Get Sunshine Coins</h2>
+                <p>Your Sunshine Coins are used throughout the FSRX Marketplace.</p>
+            </div>
+            <span class="section-count">01 — 04</span>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card" data-category="coins" data-price="250" data-name="Pocket Sunshine">
+                <div class="product-icon">☀</div>
+                <h3>Pocket Sunshine</h3>
+                <p class="product-description">A little extra sunshine for your wallet. Start saving for your favorite marketplace items!</p>
+                <div class="product-price">250 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card featured" data-category="coins" data-price="500" data-name="Sunshine Stash">
+                <div class="product-badge">Popular</div>
+                <div class="product-icon">☀</div>
+                <h3>Sunshine Stash</h3>
+                <p class="bonus">+100 bonus coins</p>
+                <p class="product-description">Build up your balance with a little bonus sunshine included.</p>
+                <div class="product-price">600 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="coins" data-price="1000" data-name="Golden Reserve">
+                <div class="product-icon">✦</div>
+                <h3>Golden Reserve</h3>
+                <p class="bonus">+200 bonus coins</p>
+                <p class="product-description">A bigger reserve for members looking to save for exclusive marketplace perks.</p>
+                <div class="product-price">1,200 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="coins" data-price="2000" data-name="Sunshine Vault">
+                <div class="product-icon">◆</div>
+                <h3>Sunshine Vault</h3>
+                <p class="bonus">+500 bonus coins</p>
+                <p class="product-description">The ultimate coin reserve. Keep your wallet ready for the biggest marketplace releases.</p>
+                <div class="product-price">2,500 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- FEATURED ITEMS -->
+
+    <section class="product-section" data-section="featured">
+        <div class="section-title">
+            <div>
+                <h2>Featured</h2>
+                <p>Check out some of the marketplace's highlighted items.</p>
+            </div>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card featured" data-category="giveaway" data-price="700" data-name="Sponsor a Giveaway">
+                <div class="product-badge">Featured</div>
+                <div class="product-icon">🎁</div>
+                <h3>Sponsor a Giveaway!</h3>
+                <p class="product-description">
+                    Want to host a giveaway for the FSRX community? Sponsor an
+                    official giveaway with a prize of your choice. Customize
+                    the message, winners, prize, duration, and entry requirements!
+                </p>
+                <div class="product-price">700 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card featured" data-category="everyone" data-price="1250" data-name="Everyone Ping">
+                <div class="product-badge">Featured</div>
+                <div class="product-icon">📢</div>
+                <h3>Everyone Ping</h3>
+                <p class="product-description">
+                    Want your announcement to reach the entire community?
+                    Attach an @everyone ping to an eligible sponsored giveaway
+                    or advertisement, subject to FSRX guidelines.
+                </p>
+                <div class="product-price">1,250 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="priority" data-price="250" data-name="Priority Pass">
+                <div class="product-badge">Featured</div>
+                <div class="product-icon">⚡</div>
+                <h3>Priority Pass</h3>
+                <p class="product-description">
+                    Move your eligible advertisement scheduling priority
+                    forward. A one-time-use pass for members who want their
+                    promotion scheduled sooner.
+                </p>
+                <div class="product-price">250 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="premium" data-price="500" data-name="FSRX Premium">
+                <div class="product-badge">Featured</div>
+                <div class="product-icon">✦</div>
+                <h3>FSRX Premium</h3>
+                <p class="product-description">
+                    Show your support for Florida State Roleplay X and
+                    unlock exclusive community perks, a special role,
+                    and additional profile customization.
+                </p>
+                <div class="product-price">500 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ADVERTISEMENTS -->
+
+    <section class="product-section" data-section="advertisement">
+        <div class="section-title">
+            <div>
+                <h2>Advertisements</h2>
+                <p>Give your community announcement some extra visibility.</p>
+            </div>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card" data-category="advertisement" data-price="350" data-name="Community Advertisement">
+                <div class="product-icon">📣</div>
+                <h3>Community Advertisement</h3>
+                <p class="product-description">Promote an approved community, project, or event through an official FSRX advertisement.</p>
+                <div class="product-price">350 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="here" data-price="500" data-name="Here Ping">
+                <div class="product-icon">🔔</div>
+                <h3>Here Ping</h3>
+                <p class="product-description">Give an eligible advertisement or sponsored giveaway additional visibility with an @here notification.</p>
+                <div class="product-price">500 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- BUNDLES AND OTHER ITEMS -->
+
+    <section class="product-section" data-section="bundle">
+        <div class="section-title">
+            <div>
+                <h2>Bundles & Extras</h2>
+                <p>Special combinations and additional marketplace perks.</p>
+            </div>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card" data-category="bundle" data-price="1000" data-name="Community Supporter Bundle">
+                <div class="product-badge">Bundle</div>
+                <div class="product-icon">💎</div>
+                <h3>Community Supporter Bundle</h3>
+                <p class="product-description">A collection of selected community perks bundled together for members who want more from the marketplace.</p>
+                <div class="product-price">1,000 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="other" data-price="300" data-name="Exclusive Profile Badge">
+                <div class="product-icon">🏅</div>
+                <h3>Exclusive Profile Badge</h3>
+                <p class="product-description">Add a special badge to your FSRX website profile and let your community achievements stand out.</p>
+                <div class="product-price">300 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="other" data-price="400" data-name="Custom Profile Color">
+                <div class="product-icon">🎨</div>
+                <h3>Custom Profile Color</h3>
+                <p class="product-description">Personalize your website profile with an exclusive color option.</p>
+                <div class="product-price">400 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+            <article class="product-card" data-category="other" data-price="600" data-name="Exclusive Member Title">
+                <div class="product-icon">★</div>
+                <h3>Exclusive Member Title</h3>
+                <p class="product-description">Show off a special title on your FSRX website profile.</p>
+                <div class="product-price">600 <small>Sunshine Coins</small></div>
+                <button class="coming-soon" disabled>Coming Soon</button>
+            </article>
+
+        </div>
+    </section>
+
+    <div class="empty-state" id="emptyState">
+        <h3>No items found</h3>
+        Try another search or select a different category.
+    </div>
+
+    <div class="market-footer-note">
+        <h3>☀ Sunshine Coins make the marketplace go around.</h3>
+        <p>Earn coins through community participation and official FSRX activities. Marketplace purchases are not available yet. Keep an eye out for future releases!</p>
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+    <a class="brand footer-brand" href="index.html">
+        <img src="https://www.image2url.com/r2/default/images/1793834670290-f8cb3686-651e-4cc3-bef2-67b6b0dbf33a.png" alt="">
+        <span>FLORIDA STATE<small>ROLEPLAY X</small></span>
+    </a>
+    <p>Built for the stories we create together.</p>
+    <span class="copyright">© <span data-year></span> FSRX</span>
+</footer>
+
+<script>
+/* SLIDESHOW */
+
+const slides = [...document.querySelectorAll(".slide")];
+const dots = [...document.querySelectorAll(".slide-dot")];
+let currentSlide = 0;
+let slideTimer;
+
+function showSlide(index) {
+    currentSlide = index;
+
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
+
+    dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+    });
+}
+
+function startSlideshow() {
+    clearInterval(slideTimer);
+    slideTimer = setInterval(() => {
+        showSlide((currentSlide + 1) % slides.length);
+    }, 6500);
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        showSlide(index);
+        startSlideshow();
+    });
+});
+
+startSlideshow();
+
+/* FLOATING PARTICLES */
+
+const particleContainer = document.getElementById("particles");
+
+for (let i = 0; i < 32; i++) {
+    const particle = document.createElement("span");
+    particle.className = "particle";
+    particle.style.left = Math.random() * 100 + "%";
+    particle.style.animationDuration = (7 + Math.random() * 9) + "s";
+    particle.style.animationDelay = (Math.random() * 10) + "s";
+    particle.style.width = particle.style.height = (3 + Math.random() * 4) + "px";
+    particleContainer.appendChild(particle);
+}
+
+/* SHOP FILTERS AND SEARCH */
+
+const categoryButtons = [...document.querySelectorAll(".category-btn")];
+const searchInput = document.getElementById("shopSearch");
+const sortSelect = document.getElementById("shopSort");
+const sections = [...document.querySelectorAll(".product-section")];
+const emptyState = document.getElementById("emptyState");
+
+let selectedCategory = "all";
+
+function updateShop() {
+    const query = searchInput.value.toLowerCase().trim();
+    const sort = sortSelect.value;
+    let visibleCount = 0;
+
+    sections.forEach(section => {
+        const cards = [...section.querySelectorAll(".product-card")];
+        let sectionVisible = 0;
+
+        cards.forEach(card => {
+            const category = card.dataset.category;
+            const searchableText = (
+                card.dataset.name + " " + card.innerText
+            ).toLowerCase();
+
+            const categoryMatch =
+                selectedCategory === "all" ||
+                category === selectedCategory;
+
+            const searchMatch = searchableText.includes(query);
+            const visible = categoryMatch && searchMatch;
+
+            card.style.display = visible ? "flex" : "none";
+
+            if (visible) {
+                sectionVisible++;
+                visibleCount++;
+            }
+        });
+
+        const sectionCategory = section.dataset.section;
+
+        const showSection =
+            sectionVisible > 0 &&
+            (
+                selectedCategory === "all" ||
+                sectionCategory === selectedCategory ||
+                sectionCategory === "featured" &&
+                ["giveaway", "everyone", "priority", "premium"].includes(selectedCategory)
+            );
+
+        section.style.display = showSection ? "block" : "none";
+
+        const grid = section.querySelector(".product-grid");
+
+        if (grid) {
+            const visibleCards = cards.filter(card => card.style.display !== "none");
+
+            visibleCards.sort((a, b) => {
+                const priceA = Number(a.dataset.price);
+                const priceB = Number(b.dataset.price);
+                const nameA = a.dataset.name.toLowerCase();
+                const nameB = b.dataset.name.toLowerCase();
+
+                if (sort === "low") return priceA - priceB;
+                if (sort === "high") return priceB - priceA;
+                if (sort === "az") return nameA.localeCompare(nameB);
+
+                return 0;
+            });
+
+            visibleCards.forEach(card => grid.appendChild(card));
+        }
+    });
+
+    emptyState.style.display = visibleCount === 0 ? "block" : "none";
+}
+
+categoryButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        categoryButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        selectedCategory = button.dataset.category;
+        updateShop();
+    });
+});
+
+searchInput.addEventListener("input", updateShop);
+sortSelect.addEventListener("change", updateShop);
+
+updateShop();
+
+/* FOOTER YEAR */
+
+const yearElement = document.querySelector("[data-year]");
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+</script>
+
+</body>
+</html>
