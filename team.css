@@ -1,0 +1,48 @@
+/* FSRX Meet the Team — scoped so existing site styles remain unchanged */
+.team-page{background:#07111e;color:#f4f7fb;min-height:100vh;font-family:"DM Sans",sans-serif}
+.team-page .site-header{background:rgba(7,17,30,.88);border-bottom:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px)}
+.team-page .brand{color:#fff}.team-page .brand small{color:#9eafc2}.team-page .nav{color:#c4d0df}.team-page .nav a.active,.team-page .nav a:hover{color:#fff}.team-page .nav-cta{background:#81b6ff;color:#07111e!important}
+.team-main{background:radial-gradient(ellipse at 80% 5%,#19395c 0,transparent 34%),linear-gradient(180deg,#091727,#07111e 60%);min-height:75vh}
+.team-hero{max-width:1180px;margin:auto;padding:104px 30px 72px}
+.team-kicker{color:#81b6ff;font-size:10px;font-weight:800;letter-spacing:.22em;margin:0 0 18px}
+.team-hero h1{font-family:Manrope,sans-serif;font-size:clamp(48px,7vw,88px);letter-spacing:-.075em;line-height:.98;margin:0;color:#fff}
+.team-hero h1 span{background:linear-gradient(100deg,#fff 8%,#81b6ff 78%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.team-label{font-size:13px;font-weight:800;color:#dce9f8;margin:35px 0 10px}
+.team-hero h2{font:800 clamp(28px,4vw,43px) Manrope,sans-serif;letter-spacing:-.05em;margin:0 0 13px;color:#fff}
+.team-intro{max-width:650px;color:#aebed0;font-size:15px;line-height:1.85;margin:0}
+.team-directory{max-width:1180px;margin:auto;padding:35px 30px 90px}
+.team-section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
+.team-section-heading h2{font:800 38px Manrope,sans-serif;letter-spacing:-.055em;margin:0;color:#fff}
+.team-section-heading>p{max-width:390px;color:#9eafc2;font-size:13px;line-height:1.8;margin:0 0 4px}
+.staff-group{margin:0 0 44px}
+.staff-group-title{font:800 17px Manrope,sans-serif;color:#f4f7fb;margin:0 0 16px;display:flex;align-items:center;gap:12px}
+.staff-group-title:after{content:"";height:1px;background:rgba(180,205,235,.16);flex:1}
+.staff-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.staff-card{overflow:hidden;border:1px solid rgba(180,205,235,.16);border-radius:18px;background:linear-gradient(145deg,rgba(19,42,66,.96),rgba(10,26,44,.98));box-shadow:0 18px 45px #0003;min-width:0}
+.staff-banner{height:112px;background:linear-gradient(115deg,#173354,#345d88 55%,#81b6ff);background-position:center;background-size:cover;position:relative}
+.staff-banner:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,17,30,.35))}
+.staff-discord{display:flex;align-items:center;gap:14px;padding:0 20px;margin-top:-34px;position:relative;z-index:1}
+.staff-discord-avatar{width:72px;height:72px;border-radius:50%;border:4px solid #102238;background:#203c5c;object-fit:cover;flex:0 0 72px}
+.staff-discord-info{min-width:0;flex:1;padding-top:27px}
+.staff-name-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.staff-name{font:800 17px Manrope,sans-serif;color:#fff;overflow-wrap:anywhere}
+.staff-rank{font-size:10px;font-weight:800;color:#a8ceff;background:#81b6ff18;border:1px solid #81b6ff45;border-radius:999px;padding:5px 9px}
+.staff-handle{font-size:11px;color:#9eafc2;margin-top:4px}
+.staff-tags{display:flex;gap:7px;flex-wrap:wrap;padding:15px 20px 17px}
+.staff-tag{font-size:9px;font-weight:750;color:#c8d9ec;background:#ffffff0a;border:1px solid rgba(180,205,235,.16);padding:6px 9px;border-radius:999px}
+.staff-tag.verified{color:#a9d9bc;border-color:#66bb8a55;background:#66bb8a12}
+.staff-roblox{margin:0 14px 14px;padding:14px;border-radius:13px;background:rgba(4,14,25,.48);border:1px solid rgba(180,205,235,.12)}
+.staff-roblox-heading{font-size:9px;font-weight:900;letter-spacing:.18em;color:#81b6ff;margin:0 0 12px}
+.staff-roblox-row{display:flex;align-items:center;gap:12px;min-width:0}
+.staff-roblox-avatar{width:58px;height:58px;border-radius:12px;background:#182e47;object-fit:cover;flex:0 0 58px}
+.staff-roblox-info{min-width:0;flex:1}
+.staff-roblox-display{font-size:13px;font-weight:800;color:#f4f7fb;overflow-wrap:anywhere}
+.staff-roblox-username,.staff-roblox-id{font-size:10px;color:#9eafc2;margin-top:4px;overflow-wrap:anywhere}
+.staff-roblox-link{display:inline-flex;margin-top:9px;color:#9cc7ff;font-size:10px;font-weight:850}
+.staff-loading,.staff-empty{padding:28px;border:1px dashed #ffffff2b;border-radius:14px;color:#aebed0;text-align:center}
+.staff-error{color:#ffb6b6;text-align:center;padding:20px}
+.team-join{max-width:1120px;margin:0 auto 80px;padding:36px 42px;border-radius:18px;background:linear-gradient(115deg,#142b45,#1b3b5e);border:1px solid #81b6ff30;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.team-join h2{font:800 29px Manrope,sans-serif;letter-spacing:-.05em;margin:8px 0;color:#fff}.team-join p:not(.team-kicker){color:#b5c5d7;font-size:13px;margin:0;line-height:1.7}.team-join a{background:#81b6ff;color:#07111e;border-radius:999px;padding:14px 20px;font-size:11px;font-weight:900;white-space:nowrap}
+.team-page .oak-footer{background:#050c16;border-top:1px solid #ffffff18;color:#aab8ca}.team-page .oak-footer .brand{color:#fff}
+@media(max-width:760px){.team-hero{padding:75px 7vw 55px}.team-directory{padding:25px 7vw 65px}.team-section-heading{display:block}.team-section-heading>p{margin-top:12px}.staff-grid{grid-template-columns:1fr}.team-join{margin:0 5vw 55px;padding:27px;align-items:flex-start;flex-direction:column}.team-page .site-header .nav{background:#091727;border-color:#ffffff18}}
+@media(prefers-reduced-motion:reduce){.staff-card{transition:none}}
